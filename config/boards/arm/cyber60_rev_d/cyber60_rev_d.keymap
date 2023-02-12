@@ -21,14 +21,13 @@
 // |  LCTL  |  LWIN  |  LALT  | SPACE  | SPACE |    SPACE   |  RALT | FN  |   RWIN  | RCTRL |
 // | Rotary | (<-- Rotary switch) ----------------------------------------------------------- 
 				bindings = <
-	&kp ESC		 &kp F1 	&kp F2		&kp F3 		&kp F4 	  &kp F5 	&kp F6 		&kp F7 		&kp F8 	  &kp F9	&kp F10		&kp F11		&kp F12  	&none		&kp BKSP
+	&kp ESC		 &kp F1 	&kp F2		&kp F3 		&kp F4 	  &kp F5 	&kp F6 		&kp F7 		&kp F8 	  &kp F9	&kp F10		&kp F11		&kp F12 	&kp DEL
 	&kp ESC		 &kp NUM_1 	&kp NUM_2	&kp NUM_3 	&kp NUM_4 &kp NUM_5 &kp NUM_6 	&kp NUM_7 	&kp NUM_8 &kp NUM_9	&kp NUM_0	&kp MINUS	&kp EQL  	&kp BKSP  	&kp PAGE_UP
 	&kp TAB		 &kp   Q   	&kp   W   	&kp   E   	&kp   R   &kp   T   &kp   Y   	&kp   U   	&kp   I   &kp   O   &kp   P   	&kp LBKT 	&kp RBKT	&kp BSLH    &kp PAGE_UP
-	&kp CLCK 	 &kp   A   	&kp   S   	&kp   D   	&kp   F   &kp   G   &kp   H   	&kp   J   	&kp   K   &kp   L   &kp  SCLN  	&kp  QUOT   &none		&kp RET     &kp PAGE_UP
-	&kp LSFT 	 &none		&kp   Z   	&kp   X   	&kp   C   &kp   V   &kp   B   	&kp   N   	&kp   M   &kp  CMMA &kp  DOT  	&kp  FSLH	&kp RSFT 	&mo FN1     &kp PAGE_UP
-	&kp LCTL 	 &kp LGUI   &kp   LALT				&kp SPC			&kp SPC			&kp  SPC  			  &kp  RALT &mo  FN1 	&kp RGUI	&kp  RCTL	&kp PAGE_UP	&kp PAGE_UP
-	&kp C_PP
-			>;
+	&kp CLCK 	 &kp   A   	&kp   S   	&kp   D   	&kp   F   &kp   G   &kp   H   	&kp   J   	&kp   K   &kp   L   &kp  SCLN  	&kp  QUOT   &kp RET     &kp PAGE_UP
+	&kp LSFT	 &kp   Z   	&kp   X   	&kp   C   &kp   V   &kp   B   	&kp   N   	&kp   M   &kp  CMMA &kp  DOT  	&kp  FSLH	&kp RSFT 	&kp PAGE_UP     &kp PAGE_UP
+	&kp LCTL 	 &kp LGUI   &kp   LALT				&kp SPC		 					&kp  	  &kp RGUI  &mo  FN1 			&kp PAGE_UP     &kp PAGE_UP		&kp PAGE_UP
+	>;
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
 		settings_layer {
